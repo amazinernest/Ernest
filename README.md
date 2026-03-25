@@ -33,7 +33,7 @@ A high-end, minimalist portfolio website built with clean HTML5, CSS3, and Vanil
 
 ## 👤 About the Author
 
-**Ernest Okpako** is a Designer and Developer based in **Ibadan, Nigeria**, passionate about bridging the gap between design and technology.
+**Ernest Okpako** is a Designer and Developer based in **Ibadan, Nigeria**, passionate about bridging the gap between design and technology. He also specializes in creating custom WordPress plugins to enhance website functionality.
 
 ---
 
