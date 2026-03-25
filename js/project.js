@@ -59,6 +59,20 @@ const PROJECTS = {
         solution: 'I designed the full UI/UX for ReportAm — a clean, step-by-step reporting flow that makes it effortless for any citizen to categorise and submit an issue in under two minutes. The category grid (Road, Waste, Drainage, Electricity, Water, Security, Health) uses clear iconography so even low-literacy users can navigate confidently. I collaborated closely with a team of developers to bring the design to life, ensuring the interface was responsive, accessible, and built for real-world usage on mobile networks.',
         url: 'https://reportam.vercel.app/report',
     },
+    5: {
+        title: 'Induc Nigeria Limited',
+        tagline: 'A premier platform for industrial chemicals and safety solutions.',
+        year: '2025',
+        role: 'Web Developer',
+        category: 'Industrial Solutions · Web Development',
+        tech: ['WordPress', 'Elementor', 'PHP', 'CSS'],
+        img: 'images/project_induc.png',
+        imgAlt: 'Induc Nigeria Limited website homepage',
+        overview: 'Induc Nigeria Limited is a leading industrial solutions provider focused on chemicals, safety infrastructure, and technical services. I built their website to bridge the gap between global industrial standards and local operational needs, providing a robust digital platform for their services.',
+        challenge: 'Induc needed a digital presence that effectively communicated their technical expertise and their commitment to safety while showcasing their broad range of industrial chemicals and safety equipment to large-scale organizations.',
+        solution: 'I developed a modern, high-performance website using WordPress and Elementor. The design features a professional deep blue palette, clear service categorization, and an optimized "Get a Quote" system that streamlines business inquiries. The interface effectively balances technical product detail with uncompromising safety standards, positioning Induc as a leader in Nigeria\'s industrial landscape.',
+        url: 'https://induc.org/',
+    },
 };
 
 // ---- Load Project Data ----
