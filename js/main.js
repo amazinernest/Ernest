@@ -161,15 +161,52 @@ function initCursorGlow() {
 }
 
 // =============================================
-// SMOOTH ANCHOR SCROLL
+// VISITOR STATS SIMULATION
 // =============================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    const targetId = this.getAttribute('href').slice(1);
-    const target = document.getElementById(targetId);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
+function initVisitorStats() {
+  const totalEl = document.getElementById('total-viz');
+  const activeEl = document.getElementById('active-viz');
+  if (!totalEl || !activeEl) return;
+
+  // Total Visitors logic (persists in localStorage)
+  let totalNum = localStorage.getItem('er-total-viz');
+  if (!totalNum) {
+    totalNum = 1248; // Starting base
+  } else {
+    totalNum = parseInt(totalNum);
+  }
+
+  // Increment total slightly each time to simulate reality
+  totalNum += Math.floor(Math.random() * 2) + 1;
+  localStorage.setItem('er-total-viz', totalNum);
+  totalEl.textContent = totalNum.toLocaleString();
+
+  // Active Visitors logic (fluctuates during session)
+  function updateActive() {
+    // Keep it between 2 and 7 for a personal portfolio feel
+    const current = parseInt(activeEl.textContent);
+    const change = Math.random() > 0.5 ? 1 : -1;
+    let next = current + change;
+
+    if (next < 2) next = 2;
+    if (next > 7) next = 7;
+
+    activeEl.textContent = next;
+
+    // Schedule next update between 10-30 seconds
+    const delay = Math.floor(Math.random() * 20000) + 10000;
+    setTimeout(updateActive, delay);
+  }
+
+  updateActive();
+}
+
+// =============================================
+// INITIALIZATION
+// =============================================
+document.addEventListener('DOMContentLoaded', () => {
+  initNavigation();
+  initScrollReveal();
+  initCursorGlow();
+  initVisitorStats();
 });
