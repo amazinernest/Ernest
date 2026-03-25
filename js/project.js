@@ -73,6 +73,20 @@ const PROJECTS = {
         solution: 'I developed a modern, high-performance website using WordPress and Elementor. The design features a professional deep blue palette, clear service categorization, and an optimized "Get a Quote" system that streamlines business inquiries. The interface effectively balances technical product detail with uncompromising safety standards, positioning Induc as a leader in Nigeria\'s industrial landscape.',
         url: 'https://induc.org/',
     },
+    6: {
+        title: 'Nuvia Haven',
+        tagline: 'A compassionate platform for empowering vulnerable children and seniors.',
+        year: '2025',
+        role: 'Web Developer',
+        category: 'Nonprofit · Web Development',
+        tech: ['WordPress', 'Elementor', 'PHP', 'CSS'],
+        img: 'images/project_nuvia.png',
+        imgAlt: 'Nuvia Haven Charity Foundation website homepage',
+        overview: 'Nuvia Haven Charity Foundation is dedicated to serving the most vulnerable members of society, particularly street children and elderly persons in Nigeria. I built their website to serve as a hub for their mission of providing safe environments, healthcare, and education.',
+        challenge: 'The foundation needed a site that effectively conveyed their commitment to the UN Sustainable Development Goals (SDG 3 and 4) while providing clear pathways for potential partners and volunteers to get involved in their community development initiatives.',
+        solution: 'I developed a warm and professional site on WordPress, focusing on storytelling and clear impact reporting. The design includes dedicated sections for their core programs — Safe Haven for Children, Education & Empowerment, and Elderly Care Services. With integrated donation and partnership portals, the site now effectively drives global support for their local initiatives in Ibadan.',
+        url: 'https://nuviahaven.org/',
+    },
 };
 
 // ---- Load Project Data ----
