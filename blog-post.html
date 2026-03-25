@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post — Ernest Okpako</title>
+    <meta name="description" content="Read our latest blog post by Ernest Okpako." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Specific styles for blog post reading experience */
+        .post-container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding-bottom: 120px;
+        }
+
+        .post-header {
+            margin-bottom: 64px;
+        }
+
+        .post-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            font-size: 13px;
+            color: var(--text-muted);
+            letter-spacing: -0.01em;
+            font-weight: 500;
+        }
+
+        .post-category {
+            color: var(--accent);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+
+        .post-title {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            letter-spacing: -0.045em;
+            line-height: 1.1;
+            color: var(--text-primary);
+        }
+
+        .post-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            letter-spacing: -0.012em;
+        }
+
+        .post-content h3 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin: 48px 0 20px;
+            color: var(--text-primary);
+        }
+
+        .post-content p {
+            margin-bottom: 28px;
+        }
+
+        /* Go back link */
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            transition: color 0.2s;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-to-blog:hover {
+            color: var(--accent);
+        }
+
+        .divider-full {
+            height: 1px;
+            background: var(--border);
+            margin: 64px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="nav-logo" id="nav-logo">EO</a>
+                <span class="nav-divider">|</span>
+                <ul class="nav-links">
+                    <li><a href="about.html" class="nav-link" id="nav-about">About</a></li>
+                    <li><a href="work.html" class="nav-link" id="nav-work">Work</a></li>
+                    <li><a href="blog.html" class="nav-link" id="nav-blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="https://twitter.com" target="_blank" rel="noopener" class="nav-icon" aria-label="Twitter/X">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.243 5.617 5.921-5.617Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="mailto:ernest.kelvin26@gmail.com" class="nav-icon" id="nav-email" aria-label="Email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Post Section -->
+    <section class="page-hero">
+        <div class="container post-container">
+            <a href="blog.html" class="back-to-blog">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 12H5M5 12l7 7M5 12l7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                Back to Blog
+            </a>
+
+            <header class="post-header">
+                <div class="post-meta">
+                    <span class="post-category" id="post-category">Category</span>
+                    <span>|</span>
+                    <span id="post-date">Date</span>
+                    <span>•</span>
+                    <span id="post-read-time">Read time</span>
+                </div>
+                <h1 class="post-title" id="post-title">Post Title</h1>
+            </header>
+
+            <article class="post-content" id="post-content">
+                <!-- Content loaded via JS -->
+                <p>Loading post content...</p>
+            </article>
+
+            <div class="divider-full"></div>
+
+            <div class="contact-strip">
+                <div>
+                    <h3>Share your thoughts</h3>
+                    <p>Interested in discussing this topic further? Reach out directly.</p>
+                </div>
+                <a href="mailto:ernest.kelvin26@gmail.com" class="contact-btn">
+                    Get in touch
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 17L17 7M17 7H7M17 7v10" stroke="currentColor" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="divider"></div>
+            <div class="footer-inner">
+                <p class="footer-copy">© Ernest Okpako | 2026</p>
+                <nav class="footer-nav">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="work.html" class="footer-link">Work</a>
+                    <a href="blog.html" class="footer-link active">Blog</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>
